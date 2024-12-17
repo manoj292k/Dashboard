@@ -1,0 +1,46 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    font-family: "Poppins", serif;
+    -webkit-overflow-scrolling: 2px;
+    scroll-behavior: smooth;
+}
+
+.Header-menu{
+    cursor: pointer;
+}
+
+/* For WebKit browsers */
+*::-webkit-scrollbar {
+    width: 8px; /* Adjust this to your desired width */
+    height: 8px; /* For horizontal scrollbar */
+  }
+  
+  *::-webkit-scrollbar-thumb {
+    background: #888; /* Color of the scrollbar thumb */
+    border-radius: 10px; /* Make the thumb rounded */
+  }
+  
+  *::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Thumb color on hover */
+  }
+  
+  *::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Color of the scrollbar track */
+    border-radius: 10px;
+  }
+  
+  /* For Firefox */
+  * {
+    scrollbar-width: thin; /* Thin scrollbar */
+    scrollbar-color: #888 #f1f1f1; /* Thumb color and track color */
+  }
+  
+  .graph li{
+border-bottom: 1px solid rgb(194, 189, 189);
+border-top: 10px;
+  }

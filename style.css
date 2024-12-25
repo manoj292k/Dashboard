@@ -1,0 +1,535 @@
+*,body{
+    margin: 0px;
+    padding: 0px;
+    background: green;
+}
+body div{
+    width: 100%;
+    height: auto;
+    
+    
+}
+.navbar{
+    width: 80%;
+    padding: 10px;
+    
+    height: 40px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; 
+    flex-wrap: wrap;
+}
+.navbar div{
+    width: max-content;
+
+}
+.navbar ul {
+    width: 50%;
+
+}
+.navbar ul li{
+    list-style: none;
+    color: white;
+}
+.navbar div img{
+    width: 50px;
+    height: auto;
+}
+.home-container{
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+.home-cont1{
+    width: 50%;
+    padding: 30px;
+    height: max-content;
+    padding-bottom: 0px;
+    
+
+}
+.home-cont1 p{
+    font-size: 50px;
+    color: white;
+    padding: 15%;
+    font-weight: bold;
+}
+.home-cont1 p span{
+    color: gold;
+    font-style: italic;
+}
+.home-cont2{
+    width: 50%;
+    height: auto;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow: hidden;
+}
+.home-cont2 .img1,.img2,.img3{
+    width: 300px;
+    height: 500px;
+    margin-top: 70px;
+}
+.img2{
+     margin-left: -100px;
+     margin-top:80px;
+     
+     
+}
+.img3{
+    margin-left: -120px;
+    transform: scaleX(-1);
+}
+.about-container {
+    position: relative;
+    bottom: 60px;
+    margin-bottom: 70px;
+    width: 90%;
+    height: max-content;
+    position: relative; /* Add this for positioning */
+    height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center; /* Center text vertically */
+    z-index: 1; /* Ensure content is above the background */
+}
+
+.about-container::before {
+    content: ""; /* Create the pseudo-element */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./Images/2containerbg.jfif) no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%); /* Reduce the brightness of the background image */
+    z-index: -1; /* Place the pseudo-element behind the text */
+}
+
+.about-container div{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    background: transparent;
+    width: 70%;
+
+}
+.about-container p{
+  
+ font-size: x-large;
+ background-color: transparent;
+ color: white;
+ opacity: none;
+}
+.about-container h1{
+    background-color: transparent; 
+    color: white;
+}
+about{
+    padding: 20px;
+}
+.round-img{
+    position: relative; 
+   bottom: 120px;
+   left: 150px;
+    
+    width: 140px;
+    height: 140px;
+   border: 1px solid white;
+    z-index: 5;
+    
+}
+.content-txt{
+    position: relative;
+    bottom: 180px;
+    right: 100px;
+    color: white;
+    text-align: left;
+    font-size: 30px;
+    width: 100px;
+    background: transparent;
+}
+.content-section div{
+    padding: 25px 5px;
+}
+
+.contect-con2{
+    width: 50%;
+    height: auto;
+    padding: 5px;
+    display: flex;
+    justify-content: space-around;
+    padding: 0px 20px;
+   
+
+}
+.content-img{
+    width: 30%;
+    height: 500px ;
+    
+    margin-right: 80px;
+   
+    
+}
+.content-img img{
+    border-radius: 20px;
+}
+.why-choose-us{
+    width: max-content;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+.why-choose-us h2{
+    text-align: left;
+}
+.row{
+   
+    display: flex;
+    justify-content: space-evenly;
+   
+}
+.feature h4{
+    color: goldenrod;
+    font-style: italic;
+    text-align: left;
+    
+}
+.feature h4 span{
+    background: rgb(73, 216, 73);
+    padding: 5px;
+    color: white;
+    border-radius: 5px;
+
+}
+.feature p{
+    color:white;
+    text-align: left;
+}
+    
+
+.row div{
+    padding: 20px 10px ;
+}
+section, section div{
+    width: 100%;
+    height: auto;
+}
+.vid-cont {
+    padding: 10px;
+     
+     display: flex;
+     gap: 5px;
+     flex-direction: column;
+}
+.video-container {
+    width: 100%;
+    height: 550px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: relative; 
+    z-index: 1; 
+}
+
+.video-container::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./Images/videoImg.png) no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%);
+    z-index: -1; 
+}
+
+.video-button {
+    width: 140px;
+    height: auto;
+    padding: 20px;
+    background-color: transparent;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 30px;
+    border: 2px solid white;
+     /* Circular border */
+    cursor: pointer;
+}
+.but-video {
+    width: 0;
+    height: 0;
+    border-left: 50px solid white; /* Play button triangle */
+    border-top: 30px solid transparent;
+    border-bottom: 30px solid transparent;
+    /* margin-right: -50px; Centering the triangle within the container */
+    cursor: pointer;
+    transition: transform 0.3s ease; /* Adding a smooth transition for the play button */
+    background-color: transparent;
+}
+
+.but-video:hover {
+    transform: scale(1.2); /* Optional: Scale effect on hover */
+}
+
+.container3 {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: row;
+    padding: 10px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+}
+
+.context-cont{
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.container3 div h1{
+    padding: 35px;
+    color: white;
+    font-size: 50px;
+    font-weight: bold;
+    z-index: 10;
+    margin-left:50px ;
+}
+
+.context-cont2{
+    width: 48%;
+    display: flex;
+    justify-content:flex-start;
+    gap: 5px;
+    flex-direction: column;
+    padding: 30px;
+}
+.context-cont2 p{
+    color: white;
+    font-size: 20px;
+}
+.context-cont2 p span{
+    color: goldenrod;
+    font-weight: bold;
+}
+.container4{
+    width: 100%;
+    padding: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+
+}
+.container4 div{
+    width: 30%;
+    height: auto;
+    padding: 20px;
+}
+.container4 div p{
+    color: white;
+}
+.container4 div h2{
+    color: goldenrod;
+}
+.container-5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+}
+.con5-div1{
+    width: 40%;
+overflow: hidden;
+    height: 600px;
+}
+.con5-div1 img{
+    width: 400px;
+    height: 600px;
+    position: relative;
+    right: 50px;
+     
+}
+.con5-div2{
+    width: 50%;
+    height: auto;
+}
+.con5-div2 h2{
+    color: white;
+    text-align: left;
+    font-size: 40px;
+
+}
+.con5-div2 h2 span{
+    color: goldenrod;
+    font-style: italic;
+}
+hr{
+    background: white;
+    color: white;
+}
+.listed-faq{
+    width:auto;
+    padding: 23px;
+
+}
+.listed-faq ul{
+    width: auto;
+    height: auto;
+}
+.listed-faq ul li{
+    list-style: none;
+    color: goldenrod;
+    
+}
+.listed-faq ul li span{
+    font-size: 35px; 
+    padding: 0px 5px;
+    color: white;
+}
+.sec3{
+    width: 100%;
+    height: auto;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+
+}
+.sec3 h1{
+    text-align: center;
+    font-size: 40px;
+    color: white;
+}
+.sec3 div{
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.sec3 div div{
+    display: flex;
+    justify-content: space-around;
+    width: 20%;
+    height: auto;
+    flex-direction: column;
+}
+.sec3 div div img{
+    width: 250px;
+    height: 300px;
+}
+.sec3 div div h2{
+    color: goldenrod;
+    text-align: center;
+
+}
+.sec3 div div p{
+    color: white;
+    text-align: center;
+}
+.sec4-feedback{
+    width: 100%;
+    height: auto;
+    padding: 25px;
+}
+.sec4-feedback div{
+    display: flex;
+    justify-content: center;
+}
+.sec4-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    gap: 5px;
+
+}
+.sec4-container  p{
+    font-size: xx-large;
+    color: white;
+    width: 70%;
+    text-align: center;
+}
+.sec4-container button{
+    border: none;
+}
+.sec-5{
+    width: 100%;
+    height: auto;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+}
+.last-container {
+    position: relative; 
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    align-items: center;
+    padding: 25px;
+    z-index: 1;
+}
+
+.last-container::before {
+    content: ""; 
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: url(./Images/lastcont.png) no-repeat center center;
+    background-size: cover;
+    filter: brightness(50%); 
+    z-index: -1; 
+}
+
+.last-container p{
+    width: 60%;
+    font-size: 35px;
+    text-align: center;
+    background: transparent;
+    color: white;
+    padding: 15px;
+}
+.last-container button{
+    padding: 5px 5px;
+    color: white;
+    background-color: goldenrod;
+    font-size: xx-large;
+}
+
+.footer-container{
+    background-color: rgb(0, 0, 0);
+padding: 30px;
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: row;
+    padding-bottom: 40px;
+}
+.footer-container div , ul, h2{
+    background-color: transparent;
+    padding: 20px;
+}
+.footer-container div ul li{
+ list-style: none;
+ color: white;
+ background-color: transparent;
+}
+.footer-container div h2{
+    color: goldenrod;
+    text-align: left;
+}
+.footer-container div p, a{
+    color: white;
+    background-color: transparent;
+}
